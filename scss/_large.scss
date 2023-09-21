@@ -51,19 +51,19 @@ nav ul li a:hover {
 
 // FOOTER START //
 
-footer {
+#footerWrapper footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-footer div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 80%;
-}
+  #footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
 
-section.contact {
-  margin-top: 1rem;
+    #contact {
+      margin-top: 1rem;
+    }
+  }
 }

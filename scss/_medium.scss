@@ -5,6 +5,10 @@ header {
   }
 }
 
+nav ul li a {
+  font-size: 1.2rem;
+}
+
 .all.cards {
   display: flex;
   flex-wrap: wrap;
@@ -16,23 +20,29 @@ header {
   flex-basis: calc(50% - ($gutter/2));
 }
 
-footer div {
+.all.cards section a {
+  font-size: 1.2rem;
+}
+
+// START OF FOOTER //
+
+#footerWrapper footer #footerContent {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  #contact p {
+    margin: 0.1rem;
+  }
 }
 
-footer div section.contact p {
-  margin: 0.1rem;
-}
-
-section.social {
+#footerWrapper footer #social {
   width: 100%;
   flex-wrap: wrap;
 }
 
-footer p.legal {
+#footerWrapper footer p.legal {
   text-align: center;
 }

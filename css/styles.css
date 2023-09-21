@@ -387,6 +387,7 @@ nav ul li a {
   padding: 0.9rem 2vw;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 nav ul li.active a {
@@ -454,6 +455,7 @@ nav ul li a:hover {
   color: white;
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
+  font-size: 1.1rem;
 }
 
 .all.cards section a:hover {
@@ -465,27 +467,27 @@ nav ul li a:hover {
   border-top: 1px solid #e54e65;
 }
 
-footer {
+#footerWrapper footer {
   padding: 0.5rem 16px;
 }
-footer section.contact p {
+#footerWrapper footer #contact p {
   font-size: 1.2rem;
   margin: 0.4rem;
   text-align: center;
 }
-footer section.contact a {
+#footerWrapper footer #contact p a {
   text-decoration: none;
   color: inherit;
 }
-footer section.contact ion-icon {
+#footerWrapper footer #contact p ion-icon {
   color: #d4243e;
   padding-right: 5px;
 }
-footer section.social {
+#footerWrapper footer #social {
   display: flex;
   justify-content: center;
 }
-footer section.social a {
+#footerWrapper footer #social a {
   display: block;
   border: solid 1px #e54e65;
   border-radius: 8px;
@@ -496,16 +498,16 @@ footer section.social a {
   color: black;
   line-height: 100%;
 }
-footer section.social a:hover {
+#footerWrapper footer #social a:hover {
   background-color: #e54e65;
 }
-footer section.location {
+#footerWrapper footer #location {
   font-size: 1.4rem;
   text-align: center;
   padding: 0.7rem;
 }
 
-footer p.legal {
+#footerWrapper footer p.legal {
   color: #241818;
   margin-top: 0.8rem;
   margin-bottom: 0.2rem;
@@ -520,6 +522,9 @@ footer p.legal {
   header h1 {
     font-size: 2.6rem;
   }
+  nav ul li a {
+    font-size: 1.2rem;
+  }
   .all.cards {
     display: flex;
     flex-wrap: wrap;
@@ -529,21 +534,24 @@ footer p.legal {
   .all.cards section {
     flex-basis: calc(50% - 8px);
   }
-  footer div {
+  .all.cards section a {
+    font-size: 1.2rem;
+  }
+  #footerWrapper footer #footerContent {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
-  footer div section.contact p {
+  #footerWrapper footer #footerContent #contact p {
     margin: 0.1rem;
   }
-  section.social {
+  #footerWrapper footer #social {
     width: 100%;
     flex-wrap: wrap;
   }
-  footer p.legal {
+  #footerWrapper footer p.legal {
     text-align: center;
   }
 }
@@ -585,18 +593,18 @@ footer p.legal {
   .all.cards section {
     flex-basis: calc(33.3333% - 10.6666666667px);
   }
-  footer {
+  #footerWrapper footer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  footer div {
+  #footerWrapper footer #footerContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: 80%;
   }
-  section.contact {
+  #footerWrapper footer #footerContent #contact {
     margin-top: 1rem;
   }
 }

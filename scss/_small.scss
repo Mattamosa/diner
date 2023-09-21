@@ -76,6 +76,7 @@ nav ul li a {
   padding: 0.9rem 2vw;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 nav ul li.active a {
@@ -145,6 +146,7 @@ nav ul li a:hover {
   color: white;
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
+  font-size: 1.1rem;
 }
 
 .all.cards section a:hover {
@@ -159,28 +161,29 @@ nav ul li a:hover {
   border-top: 1px solid #e54e65;
 }
 
-footer {
+#footerWrapper footer {
   padding: 0.5rem $gutter;
 
-  section.contact {
-    p {
-      font-size: 1.2rem;
-      margin: 0.4rem;
-      text-align: center;
-    }
+  #contact p {
+    font-size: 1.2rem;
+    margin: 0.4rem;
+    text-align: center;
+
     a {
       text-decoration: none;
       color: inherit;
     }
+
     ion-icon {
       color: #d4243e;
       padding-right: 5px;
     }
   } // END OF CONTACT
 
-  section.social {
+  #social {
     display: flex;
     justify-content: center;
+
     a {
       display: block;
       border: solid 1px #e54e65;
@@ -191,20 +194,21 @@ footer {
       padding: 0.3rem;
       color: black;
       line-height: 100%;
+
       &:hover {
         background-color: #e54e65;
       }
     }
   } // END OF SOCIAL
 
-  section.location {
+  #location {
     font-size: 1.4rem;
     text-align: center;
     padding: 0.7rem;
   } // END OF LOCATION
 }
 
-footer p.legal {
+#footerWrapper footer p.legal {
   color: #241818;
   margin-top: 0.8rem;
   margin-bottom: 0.2rem;
