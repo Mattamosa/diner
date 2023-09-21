@@ -1,0 +1,38 @@
+header {
+  padding: 2rem $gutter;
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+.all.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gutter;
+  justify-content: center;
+}
+
+.all.cards section {
+  flex-basis: calc(50% - ($gutter/2));
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer div section.contact p {
+  margin: 0.1rem;
+}
+
+section.social {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer p.legal {
+  text-align: center;
+}
